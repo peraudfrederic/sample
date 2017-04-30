@@ -1,6 +1,5 @@
 package FirstPackage;
 
-public class MaClasse_A {
+public class MaClasse_B {
 
-	
 }
