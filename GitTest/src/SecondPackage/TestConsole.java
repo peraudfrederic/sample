@@ -14,7 +14,7 @@ public class TestConsole {
 		System.out.println(b.toString());
 
 		System.out.println("\nAjouté par Maria le 02/05/17 à 02h11 : Le projet ne s'importe pas, c'est moins déséspérant... en chantant :)");
-
+		System.out.println("\nAjouté par Maria le 02/05/17 à 02h28 : Deuxième essai de modifiation");
 	}
 
 }
