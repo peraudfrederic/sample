@@ -12,7 +12,9 @@ public class TestConsole {
 		
 		System.out.println(a.toString());
 		System.out.println(b.toString());
+
 		System.out.println("\nAjouté par Maria le 02/05/17 à 02h11 : Le projet ne s'importe pas, c'est moins déséspérant... en chantant :)");
+
 	}
 
 }
