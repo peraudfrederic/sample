@@ -7,4 +7,6 @@ public class MaClasse_B {
 	
 	String msg2;
 	int iiii;
+	
+	int ii;
 }
