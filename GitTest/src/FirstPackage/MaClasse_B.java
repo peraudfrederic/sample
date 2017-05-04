@@ -8,5 +8,5 @@ public class MaClasse_B {
 	String msg2;
 	int iiii;
 	
-	int ii3;
+	String ii3; // changement pour le test du 040517 à 14h05
 }
