@@ -5,7 +5,7 @@ public class MaClasse_B {
 	String msg;
 	int i;
 	
-	String msg2;
+	String msg23;
 	int iiii;
 	
 	String v;
