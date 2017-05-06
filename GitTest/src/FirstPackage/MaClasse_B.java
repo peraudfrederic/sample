@@ -8,6 +8,7 @@ public class MaClasse_B {
 	int i;
 	
 	String msg75;
+	String msg06;
 	int iiii;
 	Date aujourdhui = new Date(); // modif vlado
 	String ii3; // changement pour le test du 040517 à 14h05
