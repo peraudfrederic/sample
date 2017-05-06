@@ -14,6 +14,7 @@ public class MaClasse_B {
 	// modif Maria le 06/05/17 à 19h29
 	Date dateAujourdhui = new Date(); 	
 	public Date getDateAjh() {
+		//return daut du jour
 		return dateAujourdhui;
 	}
 	
