@@ -10,7 +10,13 @@ public class MaClasse_B {
 	String msg75;
 	String msg06;
 	int iiii;
-	Date aujourdhui = new Date(); // modif vlado
+	
+	// modif Maria le 06/05/17 à 19h29
+	Date dateAjh = new Date(); 	
+	public Date getDateAjh() {
+		return dateAjh;
+	}
+	
 	String ii3; // changement pour le test du 040517 à 14h05
 	MaClasse_A maClasseA; // changement suite au changement de l'adresse mail dans GIT
 }
