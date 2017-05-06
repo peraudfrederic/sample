@@ -12,9 +12,9 @@ public class MaClasse_B {
 	int iiii;
 	
 	// modif Maria le 06/05/17 à 19h29
-	Date dateAjh = new Date(); 	
+	Date dateAujourdhui = new Date(); 	
 	public Date getDateAjh() {
-		return dateAjh;
+		return dateAujourdhui;
 	}
 	
 	String ii3; // changement pour le test du 040517 à 14h05
