@@ -1,0 +1,270 @@
+
+
+/*selecteur universel qui permet de cibler tous les element du dom*/
+* {
+	/*background: rgba(0,0,0,.2);
+	border: 1px solid black;
+	padding-top: 10px;
+	padding-bottom: 10px;*/
+}
+
+/* ------  colors and backgrounds -------  */
+body>header a,
+.bandeau h1,
+.bandeau h2,
+.accroche a,
+body>footer a {
+	color: #fff;
+}
+
+nav a:hover,
+.active a {
+	color: #12535B;
+}
+
+.content p {
+	color: #1A1717;
+}
+
+.content h1 {
+	color: #12535B;
+}
+
+.accroche h3 {
+	color: #E87EBA;
+}
+
+body>header,
+.accroche h3,
+body>footer {
+	background: #1A1717;
+}
+
+.bandeau {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#12535b+0,2989d8+50,207cca+51,7db9e8+100 */
+	background: rgb(18,83,91); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+background: -webkit-linear-gradient(top left, rgba(18,83,91,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%);
+background: -o-linear-gradient(top left, rgba(18,83,91,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%);
+background: linear-gradient(to bottom right, rgba(18,83,91,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#12535b', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.accroche a {
+	background: #C21677;
+}
+
+.publish {
+	background: #218336;
+	border: 1px solid #218336;
+	color: #fff;
+	padding: .3rem;
+	position: fixed;
+	top: 15px;
+	left: 15px;
+}
+
+.publish:hover {
+	transition: all .3s;
+	background: #218336;
+}
+
+.alert {
+	position : fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: #16D139;
+	padding: 1rem;
+	display: none;
+}
+
+.successMsg {
+	font-size: 1.5rem;
+	color: #fff;
+	text-align: center;
+}
+
+.alert span {
+	color: #fff;
+	font-size: 1.5rem;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+
+/* ------  typos and font-size -------  */
+h1,
+h2,
+h3,
+p,
+ul {
+	margin-top: 0;
+}
+
+h1,
+.accroche h3,
+.accroche a {
+	font-size: 1.3333rem;
+}
+
+p {
+	font-size: 1rem;
+}
+
+.bandeau h1 {
+	font-size: 3rem;
+}
+
+.bandeau h1 {
+	font-size: 2rem;
+}
+
+
+/* ------  sections layout -------  */
+
+html {
+	font-size: 14px;
+}
+
+section {
+	padding: 2rem 0 1rem 0;
+}
+
+.bandeau {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.galerie figure {
+	padding: 0;
+}
+
+
+/* ------  header -------  */
+header {
+	min-height: 50px;
+}
+
+nav ul {
+	padding-left: 0;
+}
+
+nav li {
+	list-style: none;
+}
+
+nav a {
+	display: block;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.icon-navicon {
+	color: #fff;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	font-size: 1.8rem;
+}
+
+
+nav {
+	display: none;
+	padding-top: 3rem;
+}
+
+
+/* ------  main -------  */
+
+.accroche h3,
+.accroche a {
+	font-weight: bold;
+	margin: 0;
+	display: block;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.accroche a {
+	text-decoration: none;
+	text-align: center;
+}
+
+/* ------  footer -------  */
+
+body>footer {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+body>footer ul {
+	padding-left: 0;
+	margin: 0;
+}
+
+body>footer li {
+	list-style: none;
+}
+
+
+
+/* on cible les ecran superieur à 768 
+à partir les tablettes */
+@media all and (min-width: 768px) {  
+
+	/*-----layout----*/
+	html {
+		font-size: 15px;
+	}
+
+}
+
+/* on cible les ecrans superieurs à 992 
+à partir les grand tablette et notebook */
+@media all and (min-width: 992px) {
+
+	/*-----layout----*/
+	html {
+		font-size: 16px;
+	}
+
+	/*-----header----*/
+	
+	header {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	nav {
+		display: block;
+		padding-top: 0;
+	}
+
+	.icon-navicon {
+		display: none;
+	}
+
+	nav ul {
+		margin: 0;
+	}
+
+	nav li {
+		display: inline-block;
+		padding-right: 2rem;
+	}
+
+	
+
+}
+
+/* on cible les ecrans superieurs à 1200 
+à partir les laptop et pc */
+@media all and (min-width: 1200px) {
+
+	/*-----layout----*/
+	html {
+		font-size: 18px;
+	}
+
+}
