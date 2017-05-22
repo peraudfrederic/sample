@@ -2,6 +2,7 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
   <display-name>TP-CMS</display-name>
   <welcome-file-list>
+  	<welcome-file>tp-page-web.html</welcome-file>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
     <welcome-file>index.jsp</welcome-file>
@@ -9,4 +10,26 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>WEB-INF/applicationContext.xml</param-value>                     <!-- ou .... , chemin menant à la configuration spring -->
+		<!-- le fichier beans.xml (ou springContext.xml) est idéalement dans src/min/resources dans un projet maven 
+		et il sera recopié automatiquement dans web-inf/classes lorsque le war sera construit par maven
+		ou eclipse web-inf/classes/beans.xml est le chemin vu par tomcat  -->
+	</context-param>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class> <!-- initialisation de spring lors dès le démarrage webApp -->
+	</listener>
+	
+	<servlet>
+		<servlet-name>CXFServlet</servlet-name>
+		<servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class>
+	</servlet>
+	<!-- cxf....jar recherchés dans WEB-INF/lib ou … -->
+	<servlet-mapping>
+		<servlet-name>CXFServlet</servlet-name>
+		<url-pattern>/services/*</url-pattern>  <!-- ou autre que services/* → --> <!-- URL WS en "http://localhost:8080/myWebApp/services/serviceName" -->
+	</servlet-mapping>
+	
 </web-app>

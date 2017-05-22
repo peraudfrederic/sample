@@ -6,6 +6,8 @@ $(function() {
 		$("[contenteditable]").each(function(){
 			tab.push( $(this).html() );
 		});
+		
+		alert(tab);
 
 		$.ajax({
 			url: 'traitement.php',

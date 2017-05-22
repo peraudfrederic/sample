@@ -62,7 +62,7 @@ $show = showText($mysql);
 					
 			<!-- accroche -->	
 			<div class="accroche row">
-				<h3 class="col-xs-10" contenteditable="false"><?php echo $show[1] ?></h3>
+				<h3 class="col-xs-10" contenteditable="false">accroche<!-- <?php echo $show[1] ?> --></h3>
 				<a class="col-xs-2" href="#">
 					<span class="icon-arrow-circle-right"></span>
 				</a>
@@ -85,7 +85,7 @@ $show = showText($mysql);
 
 			<!-- content -->	
 			<section class="content">
-				<h1 contenteditable="false"><?php echo $show[2] ?></h1>
+				<h1 contenteditable="false">Titre content<!-- <?php echo $show[2] ?> --></h1>
 				<div class="row">
 					<div class="col-xs-12 col-sm-6" contenteditable="false">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, assumenda!</p>
@@ -136,22 +136,22 @@ $show = showText($mysql);
 
 	<script src="./js/tp.js"></script>
 
-	<?php
+	<!-- <?php
 	
 		if(isset($_SESSION['user'])) {
 	
-	?>
+	?> -->
 
 			<script> 
 				$('[contenteditable="false"]').attr("contenteditable","true");
 			</script>
 			<button class="publish">publier</button>
 
-	<?php
+	<!-- <?php
 		
 		}
 
-	?>
+	?> -->
 
 	</body>
 </html>
